@@ -1,0 +1,174 @@
+.container {
+  min-height: 200vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.widget-container {
+  width: 780px;
+
+}
+
+.widget {
+  background-color: var(--background-widget);
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.about {
+  display: flex;
+}
+.vector-image {
+  /* border: 2px rgb(153, 31, 224) solid; */
+  width: 50px; 
+  height: 170px;
+}
+
+.tab-header {
+  /* border: 2px rgb(228, 230, 118) solid; */
+  /* display: flex; */
+  align-items: center; /* Align vertically centered */
+  justify-content: flex-start; /* Align them on the left */
+  gap: 16px; /* Add space between the image and the tab-buttons */
+  margin-bottom: 16px; /* Add some space between this section and the content */
+}
+
+.tab-buttons {
+  /* border: 2px rgb(14, 133, 44) solid; */
+  display: flex;
+  background-color: #222222;
+  border-radius: 12px;
+  padding: 4px;
+  /* justify-content: space-between; */
+  width: 700px;
+  margin-bottom: 0; 
+}
+
+.tab-button {
+  /* border: 2px rgb(22, 204, 134) solid; */
+  flex: 1;
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: var(--background-button);
+  color: var(--text-primary);
+}
+
+
+.content-area {
+  /* border: 2px rgb(27, 14, 214) solid; */
+  margin-top: 20px; /* Add space between the tab-buttons and content-area */
+  max-height: 150px;
+  overflow-y: auto;
+  color: var(--text-secondary);
+  font-size: 23px;
+  line-height: 1.5;
+  padding-right: 8px;
+}
+
+.content-area p {
+  margin-bottom: 12px;
+}
+
+
+.add-Photo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-gallery {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  width: 750px;
+}
+
+
+
+.gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.gallery-title {
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--text-primary);
+}
+
+.gallery-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto; /* Align actions to the right */
+}
+
+.gallery-button {
+  background-color: var(--background-button);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.gallery-button img {
+  width: 14px;
+  height: 14px;
+}
+
+.gallery-button:hover {
+  opacity: 0.8;
+}
+
+/* Customizing the tab-header styling for alignment with About Me */
+.tab-header {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.gallery-images {
+  display: flex;
+  gap: 28px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.gallery-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.gallery-images::-webkit-scrollbar {
+  height: 4px;
+}
+
+.gallery-images::-webkit-scrollbar-thumb {
+  background-color: var(--background-button);
+  border-radius: 2px;
+}
+
+.gallery-images::-webkit-scrollbar-track {
+  background-color: var(--background-widget);
+}

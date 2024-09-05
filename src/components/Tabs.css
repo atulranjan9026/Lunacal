@@ -1,0 +1,33 @@
+.tabs-container {
+  background: #2c2f33;
+  border-radius: 10px;
+  width: 90%;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #1c1e22;
+  border: none;
+  color: #a3adb2;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background: #3b4048;
+  color: white;
+}
+
+.tab-content .tab-pane {
+  background: #1f2124;
+  padding: 20px;
+  border-radius: 10px;
+  color: #969696;
+}
